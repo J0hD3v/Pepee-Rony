@@ -1,0 +1,122 @@
+@media only screen and (max-width: 800px){
+    #icons {
+        display: flex;
+        align-self: flex-end;
+        /* margin: 10px 20px; */
+        top: 15vh;
+        right: 5vw;
+        font-size: 35px;
+        color: #E57E7E;
+        text-shadow: 3px 3px 0px rgba(255, 78, 78, 0.725);
+        z-index: 3;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        padding: 20px 10px 20px 30px;
+        width: 50px;
+        height: 50px;
+    }
+    #icons:before {
+        content : "\2630";
+    }
+    .active #icons:before{
+        content : "\2715";
+    }
+    nav{
+        padding-top: 60px;
+        position: fixed;
+        right: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #333333 ;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    nav a {
+        font-family: "Nanum Myeongjo", serif;
+        font-size: 7vw;
+        padding-left: 20px;
+    }
+
+    nav a:hover{
+        box-shadow: none;
+    }
+    .active .active{
+        right: 0;
+    }
+
+    .stop-scrolling {
+        /* height: 100%; */
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+
+header {
+    background-color: #E9A753;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 10vw;
+    margin-left: 2%;
+}
+
+header h1 {
+    /* margin: 0% 5% 0% 25%; */
+    position: relative;
+    right: 2%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+header .nav a {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+}
+
+#icons {
+    cursor: pointer;
+}
+
+.nav a {
+    color: #E57E7E;
+    font-weight: 500;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left : 0;
+    bottom : 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    background: #E57E7E;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+

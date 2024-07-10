@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Pepe Rony - Contact</title>
+    
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+<body>
+    
+    <main>
+        <!--------------------------form box----------------------------------->
+        <section id="contact-one">
+            <article class="container-one">
+                <article class="title">
+                    
+                    <h3>Contactez-nous</h3>
+                </article>
+                <form action="">
+                <input type="text" class="input-field" placeholder="Entrer votre nom">
+                <input type="text" class="input-field" placeholder="Entrer votre prénom">
+                <input type="text" class="input-field" placeholder=" Entrer votre N° de téléphone">
+                <input type="email" class="input-field" placeholder="Entrer votre adresse e-mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" >
+                <select name="liste" id="liste" class="input-field">
+                    <option value="option 1">Le sujet </option>
+                    <option value="option 2">--</option>
+                    <option value="option 3">Réclamation</option>
+                    <option value="option 4">Suggestion</option>
+                    
+                </select>
+            <textarea name="message" id="" placeholder="Message" class="input-field"></textarea> 
+            <button>Envoyer</button>
+            </form>
+            </article>
+        </section>
+            <!--------------------------form box----------------------------------->
+
+            <!----------------------------Map-------------------------------------->
+            <section>
+                <article class="wrapper-container">
+                    <article class="contact-wrapper">
+                        <article class="contact-items">
+                        <article class="contact-item">
+                            <a href="Tel: 07.69.61.94.73">
+                            <ion-icon name="call"></ion-icon>
+                            07 69 61 94 73
+                            </a>
+                        </article>
+                        <article class="contact-item">
+                            <a href="mail:exemple@test.com">
+                            <ion-icon name="mail"></ion-icon>
+                            chezlapépéerony@gmail.com
+                            </a>
+                            
+
+                        </article>
+                        <article class="contact-item">
+                            <a href="www.exemple.com">
+                            <ion-icon name="globe"></ion-icon>
+                            www.chezlapépéerony.com
+                            </a>
+                        </article>
+                        </article>
+                    </article>
+                <article id="map"></article>
+                </article>
+            </section>
+    </main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../JS/map.js"></script>
+</body>
+</html>

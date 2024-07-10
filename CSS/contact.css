@@ -1,0 +1,211 @@
+
+/*main*/
+
+section#contact-one {
+    padding: 100px;
+}
+
+section#contact-one .container-one {
+    position: absolute;
+    top: 600px;
+    left: 35%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+section#contact-one .container-one .title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section#contact-one .container-one .title h5 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section#contact-one .container-one .title h3 {
+    font-size: 4rem;
+    margin-bottom: 80px;
+    
+}
+
+section#contact-one .container-one form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+section#contact-one .container-one form input {
+    
+    width: 47%;
+
+}
+
+section#contact-one .container-one form input:hover {
+    border-bottom: 2px solid #375357 ;
+
+}
+
+section#contact-one .container-one form input ,
+section#contact-one .container-one form textarea {
+    font-size: 1.6rem;
+    margin: 15px 0;
+    padding: 40px ;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4e4;
+
+}
+
+
+section#contact-one .container-one form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 60px;
+
+}
+
+section#contact-one .container-one form textarea:hover {
+    border-bottom: 2px solid #375357 ;
+
+}
+
+section#contact-one .container-one form select {
+    color: grey;
+    font-size: 1.8rem;
+    width: 47%;
+    margin: 10px 0;
+    padding: 40px ;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4e4;
+    transition: 0.2s;
+
+}
+
+section#contact-one .container-one form select:hover {
+    border-bottom: 2px solid #375357 ;
+}
+
+
+
+section#contact-one .container-one form button {
+    
+    background-color:#375357;
+    width: 192px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 60px;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+section#contact-one .container-one form button:hover {
+    transform: translateY(-5px);
+    box-shadow: #375357 0px 10px 0px Opx ;
+
+}
+
+@media screen and (max-width: 500px) {
+
+section#contact-one .container-one form {
+    flex-direction: column;
+    width: 95%;
+}
+
+section#contact-one .container-one form input {
+    width: 100%;
+}
+section#contact-one .container-one form select {
+    width: 100%;
+}
+section#contact-one .container-one .title h5 {
+    font-size:1.5rem;
+    margin-bottom: 20px;
+}
+
+section#contact-one .container-one .title h3 {
+    font-size: 2rem;
+    
+}
+
+    
+}
+
+
+/*Map*/
+#map { 
+    height: 800px; 
+    flex: 1;
+}
+
+a, a:visited , a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-container {
+    width: 73%;
+    max-width: 1900px;
+    background-color: #E9A753;
+    /* box-sizing: ; */
+    color: #333333;
+    display:flex ;
+    position: absolute;
+    margin-left: 20%;
+    top:2000px
+}
+
+.contact-wrapper {
+    padding: 30px 60px  ;
+}
+
+.contact-wrapper h1 {
+    color: black;
+    margin-bottom: 60px;
+}
+
+.contact-items {
+    margin-top: 200px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.contact-item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+icon-icon {
+    margin-right: 15px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Pepe Rony - Accueil</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- matcha css -->
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <!-- CSS header -->
+    <link rel="stylesheet" href="../CSS/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="../JS/navbar.js" defer></script>
+    <!-- CSS main -->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <!-- CSS footer -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- leaflet -->
+    <script src="../JS/map.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../JS/carousel.js" defer></script>
+    <!-- font awesome 6 pour les icones fas fa-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+    <!-- CSS reservation -->
+    <link rel="stylesheet" href="../CSS/reservation.css">
+</head>
+<body>
+
+    <header>
+        <img src="../images-video/logo.png" alt="logo" class="logo">
+        <h1>Chez la Pepée Rony</h1>
+    </header>
+
+    <section class="container_nav">
+        <div id="icons"></div>
+        <nav class="nav">
+            <a href="#">Accueil</a>
+            <a href="#">Carte</a>
+            <a href="../HTML/reservation.html">Commander & Réserver</a>
+            <a href="../HTML/contact.html">Contact</a>
+        </nav>
+    </section>
+
+    <!--  -->
+
+    <main>
+
+        <section class="order__background">
+            <h1>Le moment est parfait pour goûter à la pizza ultime
+            </h1>
+            <button class="btn_reservation_1"> <a href="#ancre1">Réserver</a> </button>
+        </section>
+        <!--Order-->
+        <section class="section_container_order" id="menu">
+            <h3>La Pizza Toujours Savoureuse</h3>
+            <h2 class="section_header">Choisissez et Savourez</h2>
+            <p class="section_description">
+                Laissez-vous tenter par une pizza fraîchement sortie du four, 
+                sa croûte dorée craquant sous vos doigts. La sauce tomate, 
+                riche et parfumée, se marie à la perfection avec la mozzarella 
+                fondante qui s'étire en fils gourmands. 
+            </p>
+            <article class="order_grid">
+                <!--1-->
+                <article class="order_card">
+                    <img src="../images-video/pizza_4.JPG" alt="Pizza_4_fromages">
+                    <h4>L'Harmonie des Quatre</h4>
+                    <p> L'Harmonie des Quatre", une symphonie gustative où 
+                        quatre fromages d'exception se marient à la perfection
+                        sur une base croustillante.
+                    </p>
+                    <button class="btn_order">Commandez maintenant</button>
+                </article>
+                <!--1-->
+
+                <!--2-->
+                <article class="order_card">
+                    <img src="../images-video/pizza_2.JPG" alt="Pizza_saumon">
+                    <h4>Saumon Suprême</h4>
+                    <p> La Nordique Délice", une symphonie océane où
+                        le saumon fumé d'exception se marie à la perfection
+                        avec une base croustillante et des notes crémeuses.
+                    </p>
+                    <button class="btn_order">Commandez maintenant</button>
+                </article>
+                <!--2-->
+
+                <!--3-->
+                <article class="order_card">
+                    <img src="../images-video/pizza_3.JPG" alt="Pizza_4_fromages">
+                    <h4>La Terre & Mer Fusion</h4>
+                    <p> La Terre & Mer Fusion", une symphonie culinaire où
+                        les trésors de la terre et de la mer s'harmonisent à la perfection
+                        .
+                    </p>
+                    <button class="btn_order">Commandez maintenant</button>
+                </article>
+                <!--3-->
+            </article>
+        </section>
+        <!--Order-->
+
+        <!--Reservation-->
+        <section class="section_container_order1" id="ancre1">
+            <h3>Réservation</h3>
+            <h2 class="section_header">Réservez votre table</h2>
+
+            <form action="">
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="E-mail">
+                <input type="date" placeholder="Date">
+                <input type="time" placeholder="Heure de réservation">
+                <input type="number" placeholder="Nombre de personnes">
+                <button class="btn_reservation" type="submit">Réserver</button>
+            </form>
+
+        </section>
+        <!--Reservation-->
+        
+    </main>
+
+    <!--  -->
+
+    <footer>
+
+        <section class="container_info">
+            <p>Téléphone: 01 23 45 67 89</p>
+            <p>Adresse: 1 rue Xxxxxxxxx, 31000 Toulouse</p>
+            <section class="social_media">
+                <a href="#"><img src="../images-video/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../images-video/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../images-video/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../images-video/tripadvisor.png" alt="Tripadvisor"></a>
+            </section>
+            
+        </section>
+        <section class="container_map">
+            <article id="map"></article>
+        </section>
+
+    </footer>
+
+</body>
+</html>
